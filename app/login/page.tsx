@@ -25,19 +25,19 @@ export default function LoginPage() {
         <div className="max-w-md">
           <div className="flex items-center gap-2 mb-8">
             <div className="h-8 w-8 rounded-md bg-foreground flex items-center justify-center"><Boxes className="h-4 w-4 text-background" strokeWidth={2.4} /></div>
-            <span className="text-[15px] font-semibold tracking-tight">ManuCRM</span>
+            <span className="text-[15px] font-semibold tracking-tight">WB Operator</span>
           </div>
           <h1 className="text-3xl font-semibold tracking-tight leading-[1.1] mb-3">
-            Orders, floor, and customers<br />on one connected surface.
+            Stock, POs, and vendors<br />on one connected surface.
           </h1>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Quotes to delivery — every status change, note, and handoff logged automatically. Built for manufacturing teams who left spreadsheets behind.
+            Built for Wildberries sellers: reorder alerts, production orders to vendors, and warehouse-to-FBW tracking — every handoff logged automatically.
           </p>
           <div className="mt-10 grid grid-cols-3 gap-4">
             {[
-              { n: "148ms", l: "median query" },
+              { n: "3", l: "departments" },
               { n: "100%", l: "audit trail" },
-              { n: "3", l: "departments unified" },
+              { n: "FBW", l: "ready" },
             ].map((s) => (
               <div key={s.l}>
                 <div className="text-xl font-semibold tabular">{s.n}</div>

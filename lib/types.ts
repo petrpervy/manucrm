@@ -1,10 +1,10 @@
-export type Role = "Sales" | "Production" | "Customer Service" | "Admin";
+export type Role = "Sales" | "Production" | "Warehouse" | "Customer Service" | "Admin";
 export type OrderStatus = "Quote" | "Received" | "In Production" | "Completed" | "Delivered" | "Cancelled";
 export type Priority = "Low" | "Normal" | "High" | "Urgent";
 
 export const ORDER_STATUSES: OrderStatus[] = ["Quote", "Received", "In Production", "Completed", "Delivered", "Cancelled"];
 export const PRIORITIES: Priority[] = ["Low", "Normal", "High", "Urgent"];
-export const ROLES: Role[] = ["Sales", "Production", "Customer Service", "Admin"];
+export const ROLES: Role[] = ["Sales", "Production", "Warehouse", "Customer Service", "Admin"];
 
 export type Customer = {
   id: number;

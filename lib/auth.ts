@@ -18,7 +18,7 @@ export type Session = {
   id: number;
   email: string;
   full_name: string;
-  role: "Sales" | "Production" | "Customer Service" | "Admin";
+  role: "Sales" | "Production" | "Warehouse" | "Customer Service" | "Admin";
 };
 
 const COOKIE = "manucrm_session";

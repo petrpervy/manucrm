@@ -1,14 +1,16 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LayoutDashboard, Users, Package, Factory, Settings, Boxes } from "lucide-react";
+import { LayoutDashboard, Package, Factory, Settings, Boxes, Warehouse as WarehouseIcon, Truck, ScrollText } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const nav = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
-  { href: "/customers", label: "Customers", icon: Users },
-  { href: "/orders", label: "Orders", icon: Package },
-  { href: "/production", label: "Production", icon: Factory },
+  { href: "/products", label: "Products", icon: Package },
+  { href: "/warehouse", label: "Warehouse", icon: WarehouseIcon },
+  { href: "/pos", label: "Production Orders", icon: ScrollText },
+  { href: "/production", label: "Production Floor", icon: Factory },
+  { href: "/vendors", label: "Vendors", icon: Truck },
 ];
 
 export function Sidebar() {
@@ -20,8 +22,8 @@ export function Sidebar() {
           <Boxes className="h-4 w-4 text-background" strokeWidth={2.4} />
         </div>
         <div className="flex flex-col leading-none">
-          <span className="text-[13px] font-semibold tracking-tight">ManuCRM</span>
-          <span className="text-[10px] text-muted-foreground">Rochester Ops</span>
+          <span className="text-[13px] font-semibold tracking-tight">WB Operator</span>
+          <span className="text-[10px] text-muted-foreground">Wildberries seller ops</span>
         </div>
       </div>
       <nav className="flex-1 p-2 space-y-0.5">
